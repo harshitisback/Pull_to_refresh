@@ -41,20 +41,11 @@ public class MainActivity extends AppCompatActivity
         recycler_view.setLayoutManager(manager);
         recycler_view.setAdapter(adapter);
 
-//        list = GetList();
-//        InitRecyclerView();
+
         InitSwipeRefreshLayout();
     }
 
-//    private void InitRecyclerView()
-//    {
-//        LinearLayoutManager layout_manager = new LinearLayoutManager(this);
-//        recycler_view = findViewById(R.id.my_recycler_view);
-//        adapter = new MyAdapter(this, list);
-//
-//        recycler_view.setLayoutManager(layout_manager);
-//        recycler_view.setAdapter(adapter);
-//    }
+
 
     private void InitSwipeRefreshLayout()
     {
@@ -81,7 +72,7 @@ public class MainActivity extends AppCompatActivity
                 // data fetch
                 for (int i = 0; i <1; i++) {
                     String nums = Integer.toString(num);
-                    //list.add(Math.floor(Math.random()*100)+"");
+
                     list.add(nums);
 
 
@@ -90,26 +81,12 @@ public class MainActivity extends AppCompatActivity
 
                 }
 
-//                adapter = new MyAdapter(MainActivity.this,list);
-//                recycler_view.setAdapter(adapter);
                 swipe_refresh_layout.setRefreshing(false);
-//                for (int i = 0; i <5 ; i++) {
-//                    list.add(Math.floor(Math.random()*100) + "");
-//                    adapter.notifyDataSetChanged();
-//                }
-//                list = GetList();
-//                adapter = new MyAdapter(MainActivity.this, list);
-//                recycler_view.setAdapter(adapter);
-//                swipe_refresh_layout.setRefreshing(false);
+
             }
         }, 100);
     }
 
 
-//    private List<String> GetList()
-//    {
-//        List<String> list = new ArrayList<>(Arrays.asList("1", "2", "3", "4", "5", "6", "7", "8", "9", "10"));
-//        //Collections.shuffle(list);
-//        return list;
-//    }
+
 }
