@@ -125,7 +125,7 @@ MainActivity.java
  MyAdapter.java
  ---
  
- ```
+ ```java
  import agolubeff.cardviewswiperefreshtemplate.R;
 
 public class MyAdapter extends RecyclerView.Adapter<MyViewHolder>
